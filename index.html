@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ventana Modal</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<a href="javascript:desplegar('visible')" class="open">Abrir Ventana</a>
+		<div id="bgventana">
+			<div id="ventana" class="modal">
+				<div id="titulomodal">
+					<table width="100%">
+						<tr>
+							<td>Mantenimiento de Plan de Cuentas</td>
+							<td align="right"  class="close"><a href="javascript:desplegar('hidden')">X</a></td>
+						</tr>
+					</table>
+				</div>
+				<div id="contenido">
+					<table border="0" width="100%" class="borde">
+							<tbody>
+								<tr>
+								<td height="15" colspan="3" style="height:15px"></td>
+								<td align="center"><label style="font-size: 12px">Movimi.</label></td>
+								<td align="center"><label style="font-size: 12px">Analítica</label></td>
+								<td align="center"><label style="font-size: 12px">Tipo</label></td>
+								<td align="center"><label style="font-size: 12px">Subtipo</label></td>
+								<td align="center"><label style="font-size: 12px">3.1</label></td>
+								<td align="center"><label style="font-size: 12px">Estandar</label></td>
+								</tr>
+								<tr>
+								<td width="55">Cuenta</td>
+								<td width="65"><input type="text" name="num_cuenta"></td>
+								<td width="310"><input type='text' name='nombre_cuenta'></td>
+								<td align="center" width="60">
+									<select name='movimientos'>
+										<option>Si</option>
+										<option>No</option>
+									</select>
+								<td align="center" width="60">
+									<select name='analitica'>
+										<option>Si</option>
+										<option>No</option>
+									</select>
+								<td align="center" width="160">
+									<select name='tipo'>
+										<option>Balance General</option>
+										<option>Cuentas de Orden</option>
+										<option>E.E.G.G. POR FUNCION</option>
+										<option>E.E.G.G. POR NATURALEZA</option>
+									</select>
+								<td align="center" width="170">
+									<select name='subtipo'>
+										<option>Activo Corriente</option>
+										<option>Activo no Corriente</option>
+										<option>Pasivo Corriente</option>
+										<option>Pasivo no Corriente</option>
+										<option>Patrimonio</option>
+									</select>
+								<td align="center" width="120">
+									<select style="width: 90px"></select>
+								</td>
+								<td align="center" width="120">
+									<select style ='width: 90px'></select>
+								</td>
+								</tr>
+								<tr>
+									<td colspan="9">
+										<hr style="margin: 3px ">
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					<table border="0" width="100%">
+							<tbody>
+								<tr>
+									<td>Enlazar</td>
+									<td>Clase 6</td>
+									<td></td>
+									<td align="center" colspan="4">TRANSFERENCIA AL EE.GG.</td>
+								</tr>
+								<tr>
+									<td width="55">
+										<select style="width: 50px">
+											<option>Si</option>
+											<option>No</option>
+										</select>
+									</td>
+									<td width="65">
+										<input type="input" name="clase6" style="width: 60px">
+									</td>
+									<td>
+										<input type="input" name="nombre_clase6" style="width: 305px">
+									</td>
+									<td align="center" width="140">
+										<input type="radio" name="radiobutton">
+										<label style="font-size: 12px">Costo del Servicio</label>
+									</td>
+									<td align="center" width="140">
+										<input  type="radio" name="radiobutton">
+										<label style="font-size: 12px">Gastos Administrativos</label>
+									</td>
+									<td align="center" width="140">
+										<input  type="radio" name="radiobutton">
+										<label style="font-size: 12px">Gastos de Venta</label>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="6">
+										<hr style="margin: 3px ">
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					<table border="0" width="100%">
+							<tbody>
+								<tr>
+									<td>
+										<label>
+											<u>Migrar Información</u>
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<td width="190">
+										<input type="checkbox">
+										<label style="font-size: 12px">PCGE</label>
+									</td>
+									<td width="190">
+										<input type="checkbox">
+										<label style="font-size: 12px">Asientos Modelos</label>
+									</td>
+									<td align="right">
+										<button>
+											Procesar
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="5">
+										<hr style="margin:3px">
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					<table border="0" width="100%">
+							<tbody>
+								<tr>
+									<td>
+										<input type="text" style="width: 315px">
+										<label style="font-size: 12px">Export./ Import.</label>
+										<select style="width: 140px">
+											<option>EXPORTACIÓN</option>
+											<option>IMPORTACIÓN</option>
+										</select>
+									</td>
+									<td align="center">
+										<label style="font-size: 12px">Moneda Dif. Camb.</label>
+										<select style="width: 100px">
+											<option>SOLES</option>
+											<option>DÓLARES AMERICANOS</option>
+										</select>
+									</td>
+									<td align="right">
+										<label style="font-size: 12px">Tipo</label>
+										<select style="width: 140px">
+											<option>2 Dígitos</option>
+											<option>3 Dígitos</option>
+											<option>4 Dígitos</option>
+											<option>5 Dígitos</option>
+											<option>6 Dígitos</option>
+											<option>7 Dígitos</option>
+											<option>Todos los Dígitos</option>
+										</select>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					<table id="dg" style="width:700px;height:250px"
+							title="DataGrid - BufferView" 
+							data-options="rownumbers:true,singleSelect:true,autoRowHeight:false,pageSize:50">
+	       				<thead>
+		           			<tr>
+		               			<th field="inv" width="80">Inv No</th>
+		               			<th field="date" width="100">Date</th>
+		               			<th field="name" width="80">Name</th>
+		               			<th field="amount" width="80" align="right">Amount</th>
+		               			<th field="price" width="80" align="right">Price</th>
+		               			<th field="cost" width="100" align="right">Cost</th>
+		               			<th field="note" width="110">Note</th>
+		           			</tr>
+	       				</thead>
+					</table>
+					<table width="100%" border="0">
+
+						<tbody>
+							<tr>
+								<td width="100">
+									<label style='font-size: 12px'>Buscar Cuenta</label>
+								</td>
+								<td width="120">
+									<input type="text" style="width: 90px;text-align: center;">
+								</td>
+								<td width="17">
+									<div style="width: 12px; height: 12px; background: blue; margin-bottom: 3px"></div>
+								</td>
+								<td width="150">
+								<label>Ctas. sin Movimiento</label>
+								</td>
+								<td width="17">
+									<div style="width: 12px; height: 12px; background: red; margin-bottom: 3px"></div>
+								</td>
+								<td>
+									<label>Ctas. con Movimientos</label>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div style="margin: 10px 10px 0;">
+							<table border="0" width="100%">
+								<tbody>
+									<tr>
+										<td width="20%"></td>
+										<td width="40%" align="left"></td>
+										<td align="right">
+											<div class="btn-group" role='group'>
+												<button type="button" style="height: 35px;font-size: 8px;background-image: url(images/nuevo.png); height: 31px; width: 31px;border: none;"></button>
+												<button type="button" style="height: 35px;font-size: 8px;background-image: url(images/editar.png); height: 31px; width: 31px;border: none;"></button>
+												<button type="submit" style="height: 35px;font-size: 8px;background-image: url(images/eliminar.png); height: 31px; width: 31px;border: none;"></button>
+												<button type="button" style="height: 35px;font-size: 8px;background-image: url(images/guardar.png); height: 31px; width: 31px;border: none;"></button>
+												<button type="button" style="height: 35px;font-size: 8px;background-image: url(images/cancelar.png); height: 31px; width: 31px;border: none;"></button>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

@@ -23,9 +23,13 @@
 	top: 0px;
 	left: 0px;
 	visibility: hidden;
-	-webkit-transition: opacity 1s;
+	-webkit-transition: visibility 0.2s;
 }
 
+#bgventana:hover { 
+visibility: visible; 
+opacity: 1; 
+}
 
 .modal{
 	position: absolute;
